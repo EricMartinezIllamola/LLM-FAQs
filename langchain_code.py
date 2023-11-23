@@ -4,9 +4,10 @@ from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.embeddings import HuggingFaceInstructEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
+import streamlit as st
 import os
 
-os.environ["api_key"] == st.secrets["api_key"]
+os.environ["api_key"] = st.secrets["api_key"]
 
 llm = GooglePalm(os.environ["api_key"], temperature=0.1)
 
