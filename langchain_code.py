@@ -9,7 +9,7 @@ import os
 
 os.environ["api_key"] = st.secrets["api_key"]
 
-llm = GooglePalm(os.environ["api_key"], temperature=0.1)
+llm = GooglePalm(google_api_key=os.environ["api_key"], temperature=0.1)
 
 instructor_embeddings = HuggingFaceInstructEmbeddings()
 vectordb_file_path = "faiss_index_2"
