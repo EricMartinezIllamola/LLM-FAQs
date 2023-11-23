@@ -2,7 +2,7 @@ streamlit==1.22.0
 langchain==0.0.284
 faiss-cpu==1.7.4
 InstructorEmbedding
-sentence-transformers
-google-generativeai
+sentence-transformers -U
+google-generativeai --user
 tiktoken==0.4.0
 protobuf~=3.19.0
