@@ -52,7 +52,3 @@ def get_qa_chain():
                                         chain_type_kwargs={"prompt": PROMPT})
 
     return chain
-
-# if __name__ == "__main__":
-#     chain = get_qa_chain()
-#     print(chain("What kind of products do you deliver?"))
